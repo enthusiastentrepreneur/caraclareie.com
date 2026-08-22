@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://caraclareie.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://caraclareie.com/counties/clare.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://caraclareie.com/counties/dublin.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://caraclareie.com/counties/cork.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://caraclareie.com/counties/galway.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://caraclareie.com/counties/limerick.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

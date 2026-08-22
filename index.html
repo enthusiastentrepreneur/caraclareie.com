@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cara Clare — A free directory for carers &amp; older people</title>
+<meta name="description" content="A free, independent directory connecting older people and family carers across Ireland to real local support, sorted by what you need. Piloted in County Clare.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://caraclareie.com/">
+<link rel="icon" type="image/svg+xml" href="https://caraclareie.com/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cara Clare">
+<meta property="og:title" content="Cara Clare — A free directory for carers &amp; older people">
+<meta property="og:description" content="A free, independent directory connecting older people and family carers across Ireland to real local support, sorted by what you need. Piloted in County Clare.">
+<meta property="og:url" content="https://caraclareie.com/">
+<meta property="og:image" content="https://caraclareie.com/og-image.png">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Clare — A free directory for carers &amp; older people">
+<meta name="twitter:description" content="A free, independent directory connecting older people and family carers across Ireland to real local support, sorted by what you need. Piloted in County Clare.">
+<meta name="twitter:image" content="https://caraclareie.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Cara Clare",
+      "url": "https://caraclareie.com/",
+      "logo": "https://caraclareie.com/favicon.svg",
+      "description": "A free, independent directory connecting older people and family carers across Ireland to real local support services.",
+      "areaServed": "IE"
+    },
+    {
+      "@type": "WebSite",
+      "name": "Cara Clare",
+      "url": "https://caraclareie.com/"
+    }
+  ]
+}
+</script>
+
+<style>
+  /* ============ Tokens ============ */
+  :root{
+    --bg: #EDEFE6;
+    --bg-alt: #E1E5D7;
+    --surface: #FFFFFF;
+    --surface-line: #D7DBC9;
+    --ink: #142E2C;
+    --ink-soft: #45605C;
+    --ink-faint: #6C837E;
+    --accent: #1F7A6C;
+    --accent-ink: #0E4A40;
+    --accent-soft: #DCEAE4;
+    --gold: #B9791E;
+    --gold-soft: #F3E4C9;
+    --focus: #1F7A6C;
+    --shadow: 0 1px 2px rgba(20,46,44,0.06), 0 8px 24px -12px rgba(20,46,44,0.18);
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --radius-sm: 9px;
+    --max: 1080px;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #0E1B1A;
+      --bg-alt: #142624;
+      --surface: #16302D;
+      --surface-line: #274541;
+      --ink: #EDF3F0;
+      --ink-soft: #B9CBC5;
+      --ink-faint: #86A29B;
+      --accent: #4FBFA8;
+      --accent-ink: #B7EADD;
+      --accent-soft: #1D3D38;
+      --gold: #E0A83F;
+      --gold-soft: #3A2E17;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #0E1B1A;
+    --bg-alt: #142624;
+    --surface: #16302D;
+    --surface-line: #274541;
+    --ink: #EDF3F0;
+    --ink-soft: #B9CBC5;
+    --ink-faint: #86A29B;
+    --accent: #4FBFA8;
+    --accent-ink: #B7EADD;
+    --accent-soft: #1D3D38;
+    --gold: #E0A83F;
+    --gold-soft: #3A2E17;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  html,body{max-width:100%; overflow-x:hidden;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Atkinson Hyperlegible","Segoe UI",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:"Fraunces","Georgia",serif;
+    font-weight:600;
+    line-height:1.12;
+    text-wrap:balance;
+    margin:0;
+    color:var(--ink);
+  }
+  a{color:var(--accent-ink);}
+  a:focus-visible, button:focus-visible, .card:focus-visible{
+    outline:3px solid var(--focus);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  @media (max-width:400px){ .wrap{padding:0 16px;} }
+  .eyebrow{
+    font-family:"Atkinson Hyperlegible",sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.11em;
+    font-size:13px;
+    font-weight:700;
+    color:var(--accent-ink);
+  }
+  section{padding:64px 0;}
+  @media (max-width:640px){ section{padding:44px 0;} }
+  @media (max-width:400px){ section{padding:32px 0;} }
+
+  /* ============ Header ============ */
+  header{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--surface-line);
+  }
+  .headbar{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 0; gap:12px; flex-wrap:nowrap;
+  }
+  @media (max-width:340px){ .headbar{ padding:12px 0; } }
+  .brand{display:flex; align-items:center; gap:10px; text-decoration:none; min-width:0;}
+  .brand-mark{width:34px;height:34px;flex:none;}
+  .brand-name{
+    font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--ink);
+    white-space:nowrap;
+  }
+  .brand-name em{font-style:normal; color:var(--accent-ink);}
+  nav.headnav{display:flex; gap:22px; align-items:center; flex:none;}
+  @media (max-width:380px){
+    .brand-mark{width:28px;height:28px;}
+    .brand-name{font-size:17px;}
+    nav.headnav{gap:10px;}
+  }
+  nav.headnav a:not(.btn){
+    color:var(--ink-soft); text-decoration:none; font-weight:700; font-size:14.5px;
+  }
+  nav.headnav a:not(.btn):hover{color:var(--accent-ink);}
+
+  /* Buttons — locked-in text colors so they're never lost to inherited/visited link styling */
+  a.btn, a.btn:link, a.btn:visited{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--accent); color:#F5FBF8 !important;
+    padding:11px 18px; border-radius:100px;
+    font-weight:700; font-size:15px; text-decoration:none;
+    border:none; cursor:pointer;
+    box-shadow:var(--shadow);
+  }
+  a.btn:hover, a.btn:focus{ filter:brightness(1.06); color:#F5FBF8 !important; }
+  a.btn.secondary, a.btn.secondary:link, a.btn.secondary:visited{
+    background:transparent; color:var(--accent-ink) !important;
+    border:1.5px solid var(--surface-line);
+    box-shadow:none;
+  }
+  a.btn.secondary:hover{ background:var(--accent-soft); }
+  a.btn.small{padding:8px 14px; font-size:13.5px;}
+  @media (max-width:760px){ nav.headnav a.hide-mobile{display:none;} }
+
+  /* ============ Hero ============ */
+  .hero{padding:56px 0 40px;}
+  .hero-grid{
+    display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center;
+  }
+  @media (max-width:840px){ .hero-grid{grid-template-columns:1fr;} }
+  .hero h1{font-size:clamp(32px,5vw,52px); letter-spacing:-.01em;}
+  .hero p.lede{
+    font-size:19px; color:var(--ink-soft); max-width:48ch; margin-top:16px;
+  }
+  .hero-ctas{display:flex; gap:12px; flex-wrap:wrap; margin-top:28px;}
+  @media (max-width:480px){
+    .hero-ctas{flex-direction:column;}
+    .hero-ctas a.btn{width:100%; justify-content:center;}
+  }
+  .hero-note{
+    margin-top:18px; font-size:14px; color:var(--ink-faint); max-width:46ch;
+  }
+  .hero-panel{
+    background:var(--surface); border:1px solid var(--surface-line);
+    border-radius:var(--radius-lg); padding:26px; box-shadow:var(--shadow);
+  }
+  .hero-panel h2{font-size:16px; font-family:"Atkinson Hyperlegible"; font-weight:700; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.08em;}
+  .stat-row{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px;}
+  .stat{padding-top:14px; border-top:1px solid var(--surface-line); min-width:0;}
+  .stat .num{
+    font-family:"Fraunces",serif; font-weight:700; font-size:clamp(22px,6vw,28px); color:var(--gold);
+    font-variant-numeric:tabular-nums; display:block; line-height:1.15;
+  }
+  .stat .cap{font-size:13.5px; color:var(--ink-soft); line-height:1.4;}
+  @media (max-width:420px){
+    .stat-row{grid-template-columns:1fr;}
+    .stat .num{font-size:26px;}
+  }
+  .hero-src{font-size:12px; color:var(--ink-faint); margin-top:16px;}
+
+  /* ============ Section headers ============ */
+  .sec-head{max-width:64ch; margin-bottom:34px;}
+  .sec-head h2{font-size:clamp(24px,3.4vw,34px);}
+  .sec-head p{color:var(--ink-soft); margin-top:10px; font-size:16.5px;}
+
+  /* ============ Category grid ============ */
+  .bg-alt{background:var(--bg-alt); border-top:1px solid var(--surface-line); border-bottom:1px solid var(--surface-line);}
+  .cat-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+  }
+  @media (max-width:900px){ .cat-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .cat-grid{grid-template-columns:1fr;} }
+  .cat-card{
+    display:flex; flex-direction:column; gap:12px;
+    background:var(--surface); border:1px solid var(--surface-line);
+    border-radius:var(--radius-md); padding:20px;
+    text-decoration:none; color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cat-card:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
+  .cat-icon{
+    width:42px;height:42px; border-radius:11px; background:var(--accent-soft);
+    display:flex; align-items:center; justify-content:center; color:var(--accent-ink);
+  }
+  .cat-card h3{font-family:"Atkinson Hyperlegible"; font-size:16.5px; font-weight:700;}
+  .cat-card p{font-size:14px; color:var(--ink-soft); margin:0;}
+  .cat-card .go{font-size:13px; font-weight:700; color:var(--accent-ink); margin-top:auto;}
+  @media (prefers-reduced-motion: reduce){ .cat-card{transition:none;} }
+
+  /* ============ County grid (browse-by-county) ============ */
+  .county-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:760px){ .county-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .county-grid{grid-template-columns:1fr;} }
+  .county-card{
+    display:flex; flex-direction:column; gap:6px;
+    background:var(--surface); border:1px solid var(--surface-line);
+    border-radius:var(--radius-md); padding:20px;
+    text-decoration:none; color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .county-card:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
+  .county-card h3{font-family:"Fraunces",serif; font-size:19px; font-weight:600;}
+  .county-card p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+  .county-card .go{font-size:13px; font-weight:700; color:var(--accent-ink); margin-top:6px;}
+  .county-card.soon{ opacity:.75; }
+  @media (prefers-reduced-motion: reduce){ .county-card{transition:none;} }
+
+  /* ============ Directory ============ */
+  .dir-block{
+    border:1px solid var(--surface-line); border-radius:var(--radius-lg);
+    background:var(--surface); padding:26px 26px 6px; margin-bottom:22px; box-shadow:var(--shadow);
+  }
+  @media (max-width:480px){ .dir-block{padding:18px 18px 4px;} }
+  .dir-block h3{
+    font-size:20px; display:flex; align-items:center; gap:10px; margin-bottom:4px;
+  }
+  .dir-block .cat-tag{
+    font-family:"Atkinson Hyperlegible"; font-size:12.5px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--gold);
+  }
+  .org{
+    display:grid; grid-template-columns:1.4fr 1fr; gap:18px;
+    padding:18px 0; border-top:1px solid var(--surface-line);
+  }
+  @media (max-width:700px){ .org{grid-template-columns:1fr;} }
+  .org h4{margin:0 0 6px; font-size:16.5px; font-family:"Atkinson Hyperlegible"; font-weight:700;}
+  .org p{margin:0; font-size:14.5px; color:var(--ink-soft);}
+  .org .meta{font-size:14px; color:var(--ink-soft); display:flex; flex-direction:column; gap:5px;}
+  .org .meta a{font-weight:700; text-decoration:none;}
+  .org .meta a:hover{text-decoration:underline;}
+  .org .area{
+    display:inline-block; margin-top:4px; font-size:12px; font-weight:700;
+    color:var(--accent-ink); background:var(--accent-soft); padding:3px 9px; border-radius:100px;
+    width:fit-content;
+  }
+
+  /* ============ Spotlight banner ============ */
+  .spot-banner{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    background:var(--gold-soft); border:1px solid var(--surface-line);
+    border-radius:var(--radius-md); padding:16px 20px; margin-bottom:28px;
+  }
+  .spot-banner .pin{
+    width:34px;height:34px;border-radius:10px;background:var(--gold);color:#241800;
+    display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .spot-banner p{margin:0; font-size:14.5px; color:var(--ink); flex:1; min-width:160px;}
+  .spot-banner strong{color:var(--accent-ink);}
+
+  /* ============ Tips ============ */
+  .tips{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media (max-width:800px){ .tips{grid-template-columns:1fr;} }
+  .tip{
+    background:var(--surface); border:1px solid var(--surface-line); border-radius:var(--radius-md);
+    padding:22px;
+  }
+  .tip .idx{
+    font-family:"Fraunces",serif; font-weight:700; color:var(--gold); font-size:14px;
+  }
+  .tip h4{font-size:17px; margin:8px 0 6px; font-family:"Atkinson Hyperlegible"; font-weight:700;}
+  .tip p{font-size:14.5px; color:var(--ink-soft); margin:0;}
+
+  /* ============ Provider CTA ============ */
+  .provider{
+    background:var(--accent-ink); color:#EFF9F5; border-radius:var(--radius-lg);
+    padding:42px; display:grid; grid-template-columns:1.3fr .7fr; gap:28px; align-items:center;
+  }
+  @media (max-width:760px){ .provider{grid-template-columns:1fr; padding:28px;} }
+  @media (max-width:480px){
+    a.provider-btn{width:100%; justify-content:center;}
+  }
+  .provider h2{color:#F5FCF9; font-size:clamp(22px,3vw,30px);}
+  .provider p{color:#D3E9E1; margin-top:10px; max-width:52ch;}
+  a.provider-btn, a.provider-btn:link, a.provider-btn:visited{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--gold); color:#241800 !important;
+    padding:13px 22px; border-radius:100px; font-weight:700; font-size:15.5px;
+    text-decoration:none; box-shadow:var(--shadow); white-space:nowrap;
+  }
+  a.provider-btn:hover{ filter:brightness(1.06); }
+  .provider ul{margin:14px 0 0; padding-left:18px; color:#D3E9E1; font-size:14.5px;}
+  .provider ul li{margin-bottom:4px;}
+
+  /* ============ Footer ============ */
+  footer{border-top:1px solid var(--surface-line); padding:40px 0 60px;}
+  .foot-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:32px;}
+  @media (max-width:700px){ .foot-grid{grid-template-columns:1fr;} }
+  footer h5{font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-faint); margin:0 0 12px;}
+  footer p, footer li{font-size:13.5px; color:var(--ink-soft); line-height:1.7;}
+  footer ul{list-style:none; margin:0; padding:0;}
+  footer a{color:var(--ink-soft); text-decoration:underline;}
+  footer .bottom{
+    margin-top:32px; padding-top:20px; border-top:1px solid var(--surface-line);
+    font-size:12.5px; color:var(--ink-faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap headbar">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="16" cy="18" r="10" fill="var(--accent-soft)" stroke="var(--accent-ink)" stroke-width="2"/>
+        <circle cx="25" cy="24" r="10" fill="none" stroke="var(--gold)" stroke-width="2"/>
+      </svg>
+      <span class="brand-name">Cara <em>Clare</em></span>
+    </a>
+    <nav class="headnav">
+      <a href="#need" class="hide-mobile">Find help</a>
+      <a href="#directory" class="hide-mobile">Directory</a>
+      <a href="#counties" class="hide-mobile">Counties</a>
+      <a class="btn small" href="#list-service">List a service</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">A free, independent directory &mdash; now nationwide</p>
+        <h1>You shouldn't have to search this hard for help.</h1>
+        <p class="lede">Cara Clare gathers every real, trustworthy support service for older people and family carers onto one page &mdash; sorted by what you actually need, not by which organisation runs it. We started in County Clare; this is the whole country's front door.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#need">Find help now</a>
+          <a class="btn secondary" href="#list-service">I run a local service</a>
+        </div>
+        <p class="hero-note">Not affiliated with the HSE, Age Friendly Ireland, or any council &mdash; just a plain-language front door to services they and local charities already run.</p>
+      </div>
+      <div class="hero-panel">
+        <h2>Why Ireland needs this now</h2>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="num">535,393</span>
+            <span class="cap">people in Ireland are aged 65+ &mdash; 11.7% of the population</span>
+          </div>
+          <div class="stat">
+            <span class="num">189,574</span>
+            <span class="cap">of them live alone, up from 156,799 in 2016 (+21%)</span>
+          </div>
+          <div class="stat">
+            <span class="num">~300,000</span>
+            <span class="cap">people are unpaid family carers &mdash; up over 50% since 2016</span>
+          </div>
+          <div class="stat">
+            <span class="num">29%</span>
+            <span class="cap">of carers now give 43+ hours a week, up from 21% in 2016</span>
+          </div>
+        </div>
+        <p class="hero-src">Source: CSO Census of Population 2022 (national results &amp; Profile 4: Disability, Health and Carers); CSO Older Persons Information Hub.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-alt" id="need">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Start here</p>
+        <h2>What do you need help with?</h2>
+        <p>Pick the situation closest to yours. Each one links straight to the real organisation that handles it, anywhere in Ireland.</p>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-card" href="#company">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="14" r="4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          <h3>I'm feeling isolated, or worried about someone who is</h3>
+          <p>Weekly visits, daily phone check-ins.</p>
+          <span class="go">See befriending &amp; support &rarr;</span>
+        </a>
+        <a class="cat-card" href="#homehelp">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11L12 4l8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          <h3>I need day-to-day help at home</h3>
+          <p>Home support, personal care, meals.</p>
+          <span class="go">See home support &rarr;</span>
+        </a>
+        <a class="cat-card" href="#caring">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19s-7-4.4-7-9.6C5 6.4 7.1 4.5 9.6 4.5c1.4 0 2.6.7 3.4 1.8.8-1.1 2-1.8 3.4-1.8C18.9 4.5 21 6.4 21 9.4 21 14.6 12 19 12 19z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>I'm caring for a family member and need support myself</h3>
+          <p>Advice, entitlements, support groups, respite.</p>
+          <span class="go">See carer supports &rarr;</span>
+        </a>
+        <a class="cat-card" href="#transport">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="7" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="18.5" r="1.4" fill="currentColor"/><circle cx="16" cy="18.5" r="1.4" fill="currentColor"/></svg></span>
+          <h3>I need transport to appointments or the shops</h3>
+          <p>Door-to-door rural buses, local routes, everywhere.</p>
+          <span class="go">See transport &rarr;</span>
+        </a>
+        <a class="cat-card" href="#daycentre">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <h3>I'd like company, meals, or a day out</h3>
+          <p>Day care centres run locally &mdash; find yours.</p>
+          <span class="go">See day centres &rarr;</span>
+        </a>
+        <a class="cat-card" href="#money">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v8M9.5 10a2 2 0 0 1 2-1.5h1a2 2 0 0 1 0 4h-1a2 2 0 0 0 0 4h1a2 2 0 0 0 2-1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          <h3>I'm not sure what payments or entitlements I can get</h3>
+          <p>Carer's Allowance, Support Grant, Free Travel.</p>
+          <span class="go">See money &amp; entitlements &rarr;</span>
+        </a>
+        <a class="cat-card" href="#council">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.4-8 9.5C7.4 20.4 4 17 4 12V7l8-4z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>I want to know what my county offers older residents</h3>
+          <p>Every county's Age Friendly Programme.</p>
+          <span class="go">See county supports &rarr;</span>
+        </a>
+        <a class="cat-card" href="#referral">
+          <span class="cat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h5l2 5-2.5 1.5a11 11 0 0 0 5 5L17 13l5 2v5a2 2 0 0 1-2 2C10.5 22 2 13.5 2 4a2 2 0 0 1 2-2h2z" stroke="currentColor" stroke-width="1.5"/></svg></span>
+          <h3>I'm worried and don't know who to call first</h3>
+          <p>One number that can point you the right way.</p>
+          <span class="go">See where to start &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="directory">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The national directory</p>
+        <h2>Real Irish services, checked and kept current</h2>
+        <p>Every listing below operates nationwide. We link straight to them &mdash; Cara Clare doesn't provide care itself, it helps you find the right door, wherever you are in Ireland.</p>
+      </div>
+
+      <div class="dir-block" id="company">
+        <span class="cat-tag">Company &amp; isolation</span>
+        <h3>Feeling isolated, or worried about someone who is</h3>
+        <div class="org">
+          <div>
+            <h4>ALONE &mdash; Telephone Support &amp; Befriending</h4>
+            <p>Free daily or weekly phone check-ins, plus weekly in-person visits from a matched volunteer, for older people who want more social contact.</p>
+          </div>
+          <div class="meta">
+            <a href="tel:0818222024">0818 222 024</a> (8am&ndash;8pm, 7 days)
+            <a href="https://alone.ie" target="_blank" rel="noopener">alone.ie</a>
+            <span class="area">Nationwide</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-block" id="homehelp">
+        <span class="cat-tag">Home help</span>
+        <h3>Day-to-day help at home</h3>
+        <div class="org">
+          <div>
+            <h4>HSE &mdash; Home Support Service</h4>
+            <p>Apply online for HSE-funded home support (personal care, help with daily tasks), then connect with your local Home Support Office to arrange it.</p>
+          </div>
+          <div class="meta">
+            <a href="https://www.hse.ie/eng/home-support-services/apply-for-home-supports-services/" target="_blank" rel="noopener">Apply on hse.ie</a>
+            <a href="https://www.hse.ie/eng/home-support-services/contact-your-local-home-support-office/" target="_blank" rel="noopener">Find your local office</a>
+            <span class="area">Nationwide, routes to local team</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-block" id="caring">
+        <span class="cat-tag">Family carers</span>
+        <h3>Support for the person doing the caring</h3>
+        <div class="org">
+          <div>
+            <h4>Family Carers Ireland &mdash; National Careline</h4>
+            <p>Freephone advice line, or just to talk, any day you need it. Also connects you to a local Support Centre with a dedicated carer support manager, groups, and training.</p>
+          </div>
+          <div class="meta">
+            <a href="tel:1800240724">1800 24 07 24</a>
+            <a href="https://www.familycarers.ie/find-us" target="_blank" rel="noopener">Find your local Support Centre</a>
+            <span class="area">Nationwide</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-block" id="transport">
+        <span class="cat-tag">Transport</span>
+        <h3>Getting to appointments, town, or the shops</h3>
+        <div class="org">
+          <div>
+            <h4>TFI Local Link</h4>
+            <p>Rural and regional bus services in every county, including many door-to-door routes. Free Travel pass holders travel at no cost on most services.</p>
+          </div>
+          <div class="meta">
+            <a href="https://www.transportforireland.ie/tfi-local-link/" target="_blank" rel="noopener">Find your county's Local Link</a>
+            <span class="area">Every county</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-block" id="daycentre">
+        <span class="cat-tag">Day centres</span>
+        <h3>Company, meals, and a day out</h3>
+        <div class="org">
+          <div>
+            <h4>Local day care centres</h4>
+            <p>Most counties run day care centres with meals and activities through local social services and community organisations. Your county's Age Friendly Programme (below) or local HSE Home Support Office can point you to the nearest one.</p>
+          </div>
+          <div class="meta">
+            <a href="#counties">See a worked example (Clare) &darr;</a>
+            <span class="area">Varies by county</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-block" id="money">
+        <span class="cat-tag">Money &amp; entitlements</span>
+        <h3>Payments and entitlements worth checking</h3>
+        <div class="org">
+          <div>
+            <h4>Citizens Information Phone Service</h4>
+            <p>Independent, official guidance on Carer's Allowance, the Carer's Support Grant, Free Travel, and related payments.</p>
+          </div>
+          <div class="meta">
+            <a href="tel:0818074000">0818 07 4000</a> (Mon&ndash;Fri, 9am&ndash;8pm)
+            <a href="https://www.citizensinformation.ie" target="_blank" rel="noopener">citizensinformation.ie</a>
+            <span class="area">Nationwide</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-block" id="council">
+        <span class="cat-tag">County &amp; local programmes</span>
+        <h3>What your county council offers</h3>
+        <div class="org">
+          <div>
+            <h4>Age Friendly Ireland</h4>
+            <p>The national umbrella for all 31 local Age Friendly Programmes &mdash; find your county's initiatives, supports, and contacts for older residents.</p>
+          </div>
+          <div class="meta">
+            <a href="https://agefriendlyireland.ie" target="_blank" rel="noopener">agefriendlyireland.ie</a>
+            <span class="area">Every county</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-block" id="referral">
+        <span class="cat-tag">Not sure where to start</span>
+        <h3>One free call that can point you the right way</h3>
+        <div class="org">
+          <div>
+            <h4>HSELive</h4>
+            <p>The HSE's general public information line &mdash; a good first call if you're not sure what you need or who provides it in your area.</p>
+          </div>
+          <div class="meta">
+            <a href="tel:1800700700">1800 700 700</a> (Mon&ndash;Fri 8am&ndash;8pm, Sat 9am&ndash;5pm)
+            <a href="https://www.hse.ie/eng/contact-us" target="_blank" rel="noopener">hse.ie</a>
+            <span class="area">Nationwide</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-alt" id="counties">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Hyper-local detail</p>
+        <h2>Browse by county</h2>
+        <p>Each county page has its own real, checked local directory &mdash; local home help, day centres, transport, and carer support &mdash; plus that county's own CSO figures. Clare was our pilot; we're adding the rest of the country one county at a time, starting with the four biggest.</p>
+      </div>
+      <div class="county-grid">
+        <a class="county-card" href="counties/clare.html">
+          <h3>Clare</h3>
+          <p>Where we started. 21,657 people 65+, 5,566 living alone.</p>
+          <span class="go">View Clare &rarr;</span>
+        </a>
+        <a class="county-card" href="counties/dublin.html">
+          <h3>Dublin</h3>
+          <p>195,664 people 65+ across four local authorities.</p>
+          <span class="go">View Dublin &rarr;</span>
+        </a>
+        <a class="county-card" href="counties/cork.html">
+          <h3>Cork</h3>
+          <p>89,461 people 65+, Ireland's largest county by area.</p>
+          <span class="go">View Cork &rarr;</span>
+        </a>
+        <a class="county-card" href="counties/galway.html">
+          <h3>Galway</h3>
+          <p>42,886 people 65+, across city and county.</p>
+          <span class="go">View Galway &rarr;</span>
+        </a>
+        <a class="county-card" href="counties/limerick.html">
+          <h3>Limerick</h3>
+          <p>33,588 people 65+, one unified council.</p>
+          <span class="go">View Limerick &rarr;</span>
+        </a>
+        <a class="county-card soon" href="mailto:hello@caraclareie.com?subject=Add%20my%20county%20to%20Cara%20Clare">
+          <h3>Your county next?</h3>
+          <p>21 counties still to map, properly and locally.</p>
+          <span class="go">Suggest a county &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">New to caring</p>
+        <h2>Three things worth doing in your first week</h2>
+        <p>Practical, general starting points &mdash; every situation is different, so use these as a checklist to raise with the services above.</p>
+      </div>
+      <div class="tips">
+        <div class="tip">
+          <span class="idx">01</span>
+          <h4>Register with Family Carers Ireland</h4>
+          <p>It's free, takes a few minutes, and gets you a named support manager and access to training, support groups, and up-to-date entitlement advice.</p>
+        </div>
+        <div class="tip">
+          <span class="idx">02</span>
+          <h4>Ask about the Carer's Support Grant</h4>
+          <p>An annual payment separate from Carer's Allowance, and not means-tested. Citizens Information can confirm what you're entitled to.</p>
+        </div>
+        <div class="tip">
+          <span class="idx">03</span>
+          <h4>Put transport and respite in place before you need them</h4>
+          <p>Book a Local Link route and ask your local HSE Home Support Office about respite options early &mdash; both are far easier to arrange before a crisis than during one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="list-service">
+    <div class="wrap">
+      <div class="provider">
+        <div>
+          <p class="eyebrow" style="color:#BFE3D8;">For local organisations</p>
+          <h2>Run a service for older people or carers, anywhere in Ireland?</h2>
+          <p>Get listed on Cara Clare free. Want to stand out with a featured placement, your logo, and a direct enquiry link? That's a small monthly fee that keeps this directory free for the people who use it.</p>
+          <ul>
+            <li>Standard listing &mdash; always free</li>
+            <li>Featured listing &mdash; from &euro;15&ndash;20/month</li>
+            <li>Corrections &amp; updates welcome any time</li>
+          </ul>
+        </div>
+        <a class="provider-btn" href="mailto:hello@caraclareie.com?subject=List%20our%20service%20on%20Cara%20Clare">Get in touch &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>Cara Clare</h5>
+        <p>An independent, free directory connecting older people and family carers across Ireland to real local support. Piloted in County Clare. Not a service provider, not affiliated with the HSE, Age Friendly Ireland, or any council.</p>
+      </div>
+      <div>
+        <h5>Sources</h5>
+        <ul>
+          <li>CSO Census of Population 2022 &mdash; Summary Results (national)</li>
+          <li>CSO Census of Population 2022 &mdash; Profile 4: Disability, Health &amp; Carers (national)</li>
+          <li>CSO Older Persons Information Hub &mdash; Living Alone</li>
+          <li>Each county page cites its own CSO Census 2022 county profiles</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@caraclareie.com">hello@caraclareie.com</a></li>
+          <li>Spotted outdated info? Email us &mdash; we check every listing.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 Cara Clare. A community information project.</span>
+      <span>Listings checked August 2026.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
