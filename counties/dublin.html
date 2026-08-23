@@ -48,23 +48,9 @@
     --max: 1080px;
   }
 
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg: #0E1B1A;
-      --bg-alt: #142624;
-      --surface: #16302D;
-      --surface-line: #274541;
-      --ink: #EDF3F0;
-      --ink-soft: #B9CBC5;
-      --ink-faint: #86A29B;
-      --accent: #4FBFA8;
-      --accent-ink: #B7EADD;
-      --accent-soft: #1D3D38;
-      --gold: #E0A83F;
-      --gold-soft: #3A2E17;
-      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
-    }
-  }
+  /* Dark-mode auto-switch intentionally disabled: the site always shows
+     the light palette below, so it looks identical on every device
+     regardless of the phone/browser's system theme setting. */
   :root[data-theme="dark"]{
     --bg: #0E1B1A;
     --bg-alt: #142624;
