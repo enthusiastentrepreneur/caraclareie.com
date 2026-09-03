@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Cara Clare — Guides for Carers &amp; Older People in Ireland</title>
+<meta name="description" content="Plain-English guides on entitlements, home help, transport, and support for older people and family carers in Ireland &mdash; free, independent, and sourced from official data.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://caraclareie.com/blog/index.html">
+<link rel="icon" type="image/svg+xml" href="https://caraclareie.com/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cara Clare">
+<meta property="og:title" content="Blog | Cara Clare — Guides for Carers &amp; Older People in Ireland">
+<meta property="og:description" content="Plain-English guides on entitlements, home help, transport, and support for older people and family carers in Ireland &mdash; free, independent, and sourced from official data.">
+<meta property="og:url" content="https://caraclareie.com/blog/index.html">
+<meta property="og:image" content="https://caraclareie.com/og-image.png">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog | Cara Clare — Guides for Carers &amp; Older People in Ireland">
+<meta name="twitter:description" content="Plain-English guides on entitlements, home help, transport, and support for older people and family carers in Ireland &mdash; free, independent, and sourced from official data.">
+<meta name="twitter:image" content="https://caraclareie.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+  /* ============ Tokens ============ */
+  :root{
+    --bg: #EDEFE6;
+    --bg-alt: #E1E5D7;
+    --surface: #FFFFFF;
+    --surface-line: #D7DBC9;
+    --ink: #142E2C;
+    --ink-soft: #45605C;
+    --ink-faint: #6C837E;
+    --accent: #1F7A6C;
+    --accent-ink: #0E4A40;
+    --accent-soft: #DCEAE4;
+    --gold: #B9791E;
+    --gold-soft: #F3E4C9;
+    --focus: #1F7A6C;
+    --shadow: 0 1px 2px rgba(20,46,44,0.06), 0 8px 24px -12px rgba(20,46,44,0.18);
+    --radius-lg: 20px;
+    --radius-md: 14px;
+    --radius-sm: 9px;
+    --max: 1080px;
+  }
+
+  /* Dark-mode auto-switch intentionally disabled: the site always shows
+     the light palette below, so it looks identical on every device
+     regardless of the phone/browser's system theme setting. */
+  :root[data-theme="dark"]{
+    --bg: #0E1B1A;
+    --bg-alt: #142624;
+    --surface: #16302D;
+    --surface-line: #274541;
+    --ink: #EDF3F0;
+    --ink-soft: #B9CBC5;
+    --ink-faint: #86A29B;
+    --accent: #4FBFA8;
+    --accent-ink: #B7EADD;
+    --accent-soft: #1D3D38;
+    --gold: #E0A83F;
+    --gold-soft: #3A2E17;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  html,body{max-width:100%; overflow-x:hidden;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Atkinson Hyperlegible","Segoe UI",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:"Fraunces","Georgia",serif;
+    font-weight:600;
+    line-height:1.12;
+    text-wrap:balance;
+    margin:0;
+    color:var(--ink);
+  }
+  a{color:var(--accent-ink);}
+  a:focus-visible, button:focus-visible, .card:focus-visible{
+    outline:3px solid var(--focus);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  @media (max-width:400px){ .wrap{padding:0 16px;} }
+  .eyebrow{
+    font-family:"Atkinson Hyperlegible",sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.11em;
+    font-size:13px;
+    font-weight:700;
+    color:var(--accent-ink);
+  }
+  section{padding:64px 0;}
+  @media (max-width:640px){ section{padding:44px 0;} }
+  @media (max-width:400px){ section{padding:32px 0;} }
+
+  /* ============ Header ============ */
+  header{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--surface-line);
+  }
+  .headbar{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 0; gap:12px; flex-wrap:nowrap;
+  }
+  @media (max-width:340px){ .headbar{ padding:12px 0; } }
+  .brand{display:flex; align-items:center; gap:10px; text-decoration:none; min-width:0;}
+  .brand-mark{width:34px;height:34px;flex:none;}
+  .brand-name{
+    font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--ink);
+    white-space:nowrap;
+  }
+  .brand-name em{font-style:normal; color:var(--accent-ink);}
+  nav.headnav{display:flex; gap:22px; align-items:center; flex:none;}
+  @media (max-width:380px){
+    .brand-mark{width:28px;height:28px;}
+    .brand-name{font-size:17px;}
+    nav.headnav{gap:10px;}
+  }
+  nav.headnav a:not(.btn){
+    color:var(--ink-soft); text-decoration:none; font-weight:700; font-size:14.5px;
+  }
+  nav.headnav a:not(.btn):hover{color:var(--accent-ink);}
+
+  /* Buttons — locked-in text colors so they're never lost to inherited/visited link styling */
+  a.btn, a.btn:link, a.btn:visited{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--accent); color:#F5FBF8 !important;
+    padding:11px 18px; border-radius:100px;
+    font-weight:700; font-size:15px; text-decoration:none;
+    border:none; cursor:pointer;
+    box-shadow:var(--shadow);
+  }
+  a.btn:hover, a.btn:focus{ filter:brightness(1.06); color:#F5FBF8 !important; }
+  a.btn.secondary, a.btn.secondary:link, a.btn.secondary:visited{
+    background:transparent; color:var(--accent-ink) !important;
+    border:1.5px solid var(--surface-line);
+    box-shadow:none;
+  }
+  a.btn.secondary:hover{ background:var(--accent-soft); }
+  a.btn.small{padding:8px 14px; font-size:13.5px;}
+  @media (max-width:760px){ nav.headnav a.hide-mobile{display:none;} }
+
+  /* ============ Hero ============ */
+  .hero{padding:56px 0 40px;}
+  .hero-grid{
+    display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center;
+  }
+  @media (max-width:840px){ .hero-grid{grid-template-columns:1fr;} }
+  .hero h1{font-size:clamp(30px,4.6vw,46px); letter-spacing:-.01em;}
+  .hero p.lede{
+    font-size:18px; color:var(--ink-soft); max-width:48ch; margin-top:16px;
+  }
+  .hero-ctas{display:flex; gap:12px; flex-wrap:wrap; margin-top:28px;}
+  @media (max-width:480px){
+    .hero-ctas{flex-direction:column;}
+    .hero-ctas a.btn{width:100%; justify-content:center;}
+  }
+  .hero-note{
+    margin-top:18px; font-size:14px; color:var(--ink-faint); max-width:46ch;
+  }
+  .hero-panel{
+    background:var(--surface); border:1px solid var(--surface-line);
+    border-radius:var(--radius-lg); padding:26px; box-shadow:var(--shadow);
+  }
+  .hero-panel h2{font-size:16px; font-family:"Atkinson Hyperlegible"; font-weight:700; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.08em;}
+  .stat-row{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px;}
+  .stat{padding-top:14px; border-top:1px solid var(--surface-line); min-width:0;}
+  .stat .num{
+    font-family:"Fraunces",serif; font-weight:700; font-size:clamp(20px,5.5vw,26px); color:var(--gold);
+    font-variant-numeric:tabular-nums; display:block; line-height:1.15;
+  }
+  .stat .cap{font-size:13.5px; color:var(--ink-soft); line-height:1.4;}
+  @media (max-width:420px){
+    .stat-row{grid-template-columns:1fr;}
+    .stat .num{font-size:24px;}
+  }
+  .hero-src{font-size:12px; color:var(--ink-faint); margin-top:16px;}
+
+  /* ============ Section headers ============ */
+  .sec-head{max-width:64ch; margin-bottom:34px;}
+  .sec-head h2{font-size:clamp(24px,3.4vw,34px);}
+  .sec-head p{color:var(--ink-soft); margin-top:10px; font-size:16.5px;}
+
+  /* ============ Category grid ============ */
+  .bg-alt{background:var(--bg-alt); border-top:1px solid var(--surface-line); border-bottom:1px solid var(--surface-line);}
+  .cat-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+  }
+  @media (max-width:900px){ .cat-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .cat-grid{grid-template-columns:1fr;} }
+  .cat-card{
+    display:flex; flex-direction:column; gap:12px;
+    background:var(--surface); border:1px solid var(--surface-line);
+    border-radius:var(--radius-md); padding:20px;
+    text-decoration:none; color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cat-card:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
+  .cat-icon{
+    width:42px;height:42px; border-radius:11px; background:var(--accent-soft);
+    display:flex; align-items:center; justify-content:center; color:var(--accent-ink);
+  }
+  .cat-card h3{font-family:"Atkinson Hyperlegible"; font-size:16.5px; font-weight:700;}
+  .cat-card p{font-size:14px; color:var(--ink-soft); margin:0;}
+  .cat-card .go{font-size:13px; font-weight:700; color:var(--accent-ink); margin-top:auto;}
+  @media (prefers-reduced-motion: reduce){ .cat-card{transition:none;} }
+
+  /* ============ County grid (browse-by-county) ============ */
+  .county-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:760px){ .county-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .county-grid{grid-template-columns:1fr;} }
+  .county-card{
+    display:flex; flex-direction:column; gap:6px;
+    background:var(--surface); border:1px solid var(--surface-line);
+    border-radius:var(--radius-md); padding:20px;
+    text-decoration:none; color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .county-card:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
+  .county-card h3{font-family:"Fraunces",serif; font-size:19px; font-weight:600;}
+  .county-card p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+  .county-card .go{font-size:13px; font-weight:700; color:var(--accent-ink); margin-top:6px;}
+  .county-card.soon{ opacity:.6; }
+  @media (prefers-reduced-motion: reduce){ .county-card{transition:none;} }
+  .county-nav{ display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+  .county-nav a{
+    font-size:13px; font-weight:700; text-decoration:none; color:var(--accent-ink);
+    background:var(--accent-soft); padding:6px 12px; border-radius:100px;
+  }
+  .county-nav a.current{ background:var(--accent); color:#F5FBF8; }
+  .county-nav a:hover{ filter:brightness(1.05); }
+
+  /* ============ Directory ============ */
+  .dir-block{
+    border:1px solid var(--surface-line); border-radius:var(--radius-lg);
+    background:var(--surface); padding:26px 26px 6px; margin-bottom:22px; box-shadow:var(--shadow);
+  }
+  @media (max-width:480px){ .dir-block{padding:18px 18px 4px;} }
+  .dir-block h3{
+    font-size:20px; display:flex; align-items:center; gap:10px; margin-bottom:4px;
+  }
+  .dir-block .cat-tag{
+    font-family:"Atkinson Hyperlegible"; font-size:12.5px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--gold);
+  }
+  .org{
+    display:grid; grid-template-columns:1.4fr 1fr; gap:18px;
+    padding:18px 0; border-top:1px solid var(--surface-line);
+  }
+  @media (max-width:700px){ .org{grid-template-columns:1fr;} }
+  .org h4{margin:0 0 6px; font-size:16.5px; font-family:"Atkinson Hyperlegible"; font-weight:700;}
+  .org p{margin:0; font-size:14.5px; color:var(--ink-soft);}
+  .org .meta{font-size:14px; color:var(--ink-soft); display:flex; flex-direction:column; gap:5px;}
+  .org .meta a{font-weight:700; text-decoration:none;}
+  .org .meta a:hover{text-decoration:underline;}
+  .org .area{
+    display:inline-block; margin-top:4px; font-size:12px; font-weight:700;
+    color:var(--accent-ink); background:var(--accent-soft); padding:3px 9px; border-radius:100px;
+    width:fit-content;
+  }
+
+  /* ============ Spotlight banner ============ */
+  .spot-banner{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    background:var(--gold-soft); border:1px solid var(--surface-line);
+    border-radius:var(--radius-md); padding:16px 20px; margin-bottom:28px;
+  }
+  .spot-banner .pin{
+    width:34px;height:34px;border-radius:10px;background:var(--gold);color:#241800;
+    display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .spot-banner p{margin:0; font-size:14.5px; color:var(--ink); flex:1; min-width:160px;}
+  .spot-banner strong{color:var(--accent-ink);}
+
+  /* ============ Tips ============ */
+  .tips{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media (max-width:800px){ .tips{grid-template-columns:1fr;} }
+  .tip{
+    background:var(--surface); border:1px solid var(--surface-line); border-radius:var(--radius-md);
+    padding:22px;
+  }
+  .tip .idx{
+    font-family:"Fraunces",serif; font-weight:700; color:var(--gold); font-size:14px;
+  }
+  .tip h4{font-size:17px; margin:8px 0 6px; font-family:"Atkinson Hyperlegible"; font-weight:700;}
+  .tip p{font-size:14.5px; color:var(--ink-soft); margin:0;}
+
+  /* ============ Provider CTA ============ */
+  .provider{
+    background:var(--accent-ink); color:#EFF9F5; border-radius:var(--radius-lg);
+    padding:42px; display:grid; grid-template-columns:1.3fr .7fr; gap:28px; align-items:center;
+  }
+  @media (max-width:760px){ .provider{grid-template-columns:1fr; padding:28px;} }
+  @media (max-width:480px){
+    a.provider-btn{width:100%; justify-content:center;}
+  }
+  .provider h2{color:#F5FCF9; font-size:clamp(22px,3vw,30px);}
+  .provider p{color:#D3E9E1; margin-top:10px; max-width:52ch;}
+  a.provider-btn, a.provider-btn:link, a.provider-btn:visited{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--gold); color:#241800 !important;
+    padding:13px 22px; border-radius:100px; font-weight:700; font-size:15.5px;
+    text-decoration:none; box-shadow:var(--shadow); white-space:nowrap;
+  }
+  a.provider-btn:hover{ filter:brightness(1.06); }
+  .provider ul{margin:14px 0 0; padding-left:18px; color:#D3E9E1; font-size:14.5px;}
+  .provider ul li{margin-bottom:4px;}
+
+  /* ============ Footer ============ */
+  footer{border-top:1px solid var(--surface-line); padding:40px 0 60px;}
+  .foot-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:32px;}
+  @media (max-width:700px){ .foot-grid{grid-template-columns:1fr;} }
+  footer h5{font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-faint); margin:0 0 12px;}
+  footer p, footer li{font-size:13.5px; color:var(--ink-soft); line-height:1.7;}
+  footer ul{list-style:none; margin:0; padding:0;}
+  footer a{color:var(--ink-soft); text-decoration:underline;}
+  footer .bottom{
+    margin-top:32px; padding-top:20px; border-top:1px solid var(--surface-line);
+    font-size:12.5px; color:var(--ink-faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+
+  /* ============ Blog: header variant (no county pills) ============ */
+  .blog-header .brand{ }
+
+  /* ============ Blog hero ============ */
+  .blog-hero{ padding:48px 0 8px; }
+  .blog-hero h1{ font-size:clamp(30px,4.6vw,44px); }
+  .blog-hero p.lede{ font-size:17.5px; color:var(--ink-soft); max-width:56ch; margin-top:14px; }
+
+  /* ============ Post card grid (blog index) ============ */
+  .post-grid{ display:grid; grid-template-columns:1fr; gap:22px; margin-top:8px; }
+  .post-card{
+    display:grid; grid-template-columns:220px 1fr; gap:24px;
+    background:var(--surface); border:1px solid var(--surface-line); border-radius:var(--radius-lg);
+    padding:20px; box-shadow:var(--shadow); text-decoration:none; color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .post-card:hover{ transform:translateY(-2px); box-shadow:0 1px 2px rgba(20,46,44,0.06), 0 14px 30px -14px rgba(20,46,44,0.24); }
+  .post-card .thumb{
+    border-radius:var(--radius-md); overflow:hidden; aspect-ratio:4/3; background:var(--accent-soft);
+  }
+  .post-card .thumb svg, .post-card .thumb img{ width:100%; height:100%; display:block; object-fit:cover; }
+  .post-card .body{ min-width:0; display:flex; flex-direction:column; }
+  .post-card .cat-tag{
+    font-family:"Atkinson Hyperlegible"; font-size:12px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--gold);
+  }
+  .post-card h2{ font-size:22px; margin-top:6px; }
+  .post-card p.excerpt{ font-size:15px; color:var(--ink-soft); margin-top:8px; max-width:60ch; }
+  .post-card .post-meta{ font-size:13px; color:var(--ink-faint); margin-top:auto; padding-top:14px; }
+  .post-card .go{ font-size:13px; font-weight:700; color:var(--accent-ink); }
+  @media (max-width:640px){
+    .post-card{ grid-template-columns:1fr; }
+    .post-card .thumb{ aspect-ratio:16/9; }
+  }
+  @media (prefers-reduced-motion: reduce){ .post-card{ transition:none; } }
+
+  .more-soon{
+    border:1.5px dashed var(--surface-line); border-radius:var(--radius-lg);
+    padding:24px; text-align:center; color:var(--ink-faint); font-size:14.5px; margin-top:6px;
+  }
+
+  /* ============ Article page ============ */
+  .breadcrumb{ font-size:13px; color:var(--ink-faint); margin-bottom:14px; }
+  .breadcrumb a{ color:var(--ink-faint); text-decoration:underline; }
+  .article-head{ padding:20px 0 0; }
+  .article-head h1{ font-size:clamp(28px,4.6vw,42px); }
+  .post-meta-row{
+    display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:16px;
+    font-size:13.5px; color:var(--ink-faint);
+  }
+  .post-meta-row .cat-tag{
+    font-family:"Atkinson Hyperlegible"; font-size:12px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--gold); background:var(--gold-soft); padding:4px 10px; border-radius:100px;
+  }
+  .article-hero-img{
+    margin-top:26px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow);
+    aspect-ratio:16/7; background:var(--accent-soft);
+  }
+  .article-hero-img svg, .article-hero-img img{ width:100%; height:100%; display:block; object-fit:cover; }
+  @media (max-width:640px){ .article-hero-img{ aspect-ratio:4/3; } }
+
+  .article{ max-width:72ch; margin:0 auto; padding-top:36px; }
+  .article > p{ font-size:17.5px; color:var(--ink); margin:0 0 20px; }
+  .article > p.lede-p{ font-size:19px; color:var(--ink-soft); }
+  .article h2{ font-size:clamp(22px,3vw,28px); margin:44px 0 16px; }
+  .article h2:first-of-type{ margin-top:8px; }
+  .article ul, .article ol{ font-size:17px; color:var(--ink); padding-left:22px; margin:0 0 20px; }
+  .article li{ margin-bottom:8px; }
+  .article strong{ color:var(--ink); }
+
+  .stat-callout{
+    background:var(--accent-ink); color:#EFF9F5; border-radius:var(--radius-md);
+    padding:22px 24px; margin:28px 0; display:flex; gap:16px; align-items:flex-start;
+  }
+  .stat-callout .num{
+    font-family:"Fraunces",serif; font-weight:700; font-size:clamp(26px,4vw,34px); color:#F3E4C9;
+    flex:none; line-height:1; font-variant-numeric:tabular-nums;
+  }
+  .stat-callout p{ margin:0; font-size:15.5px; color:#D3E9E1; }
+  .stat-callout strong{ color:#F5FCF9; }
+
+  .rate-table{ width:100%; border-collapse:collapse; margin:24px 0; font-size:15px; }
+  .rate-table caption{ text-align:left; font-size:13px; color:var(--ink-faint); margin-bottom:8px; }
+  .rate-table th, .rate-table td{
+    text-align:left; padding:11px 14px; border-bottom:1px solid var(--surface-line);
+  }
+  .rate-table th{
+    font-family:"Atkinson Hyperlegible"; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em;
+    color:var(--ink-faint); font-weight:700; background:var(--bg-alt);
+  }
+  .rate-table td.amt{ font-variant-numeric:tabular-nums; font-weight:700; color:var(--accent-ink); white-space:nowrap; }
+  .rate-table-wrap{ overflow-x:auto; }
+
+  .article-cta{
+    background:var(--gold-soft); border:1px solid var(--surface-line); border-radius:var(--radius-lg);
+    padding:26px 28px; margin:36px 0 8px;
+  }
+  .article-cta h3{ font-size:19px; margin-bottom:8px; }
+  .article-cta p{ font-size:15px; color:var(--ink-soft); margin:0 0 16px; }
+
+  .article-sources{
+    margin-top:40px; padding-top:20px; border-top:1px solid var(--surface-line);
+  }
+  .article-sources h3{ font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-faint); margin-bottom:10px; }
+  .article-sources ul{ list-style:none; margin:0; padding:0; font-size:13.5px; color:var(--ink-soft); }
+  .article-sources li{ margin-bottom:6px; }
+  .article-sources a{ color:var(--ink-soft); }
+
+  .disclaimer{ font-size:13px; color:var(--ink-faint); margin-top:14px; }
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Cara Clare", "item": "https://caraclareie.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caraclareie.com/blog/index.html"}
+      ]
+    },
+    {
+      "@type": "Blog",
+      "name": "Cara Clare Blog",
+      "description": "Plain-English guides on entitlements, home help, transport, and support for older people and family carers in Ireland &mdash; free, independent, and sourced from official data.",
+      "url": "https://caraclareie.com/blog/index.html",
+      "publisher": {"@type": "Organization", "name": "Cara Clare", "url": "https://caraclareie.com/"}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap headbar">
+    <a class="brand" href="../index.html">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="16" cy="18" r="10" fill="var(--accent-soft)" stroke="var(--accent-ink)" stroke-width="2"/>
+        <circle cx="25" cy="24" r="10" fill="none" stroke="var(--gold)" stroke-width="2"/>
+      </svg>
+      <span class="brand-name">Cara <em>Clare</em></span>
+    </a>
+    <nav class="headnav">
+      <a href="../index.html#need" class="hide-mobile">Find help</a>
+      <a href="../index.html#counties" class="hide-mobile">Counties</a>
+      <a href="index.html" class="current-nav">Blog</a>
+      <a class="btn small" href="../index.html#list-service">List a service</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="blog-hero">
+    <div class="wrap">
+      <p class="eyebrow">Cara Clare Blog</p>
+      <h1>Guides for carers &amp; older people in Ireland</h1>
+      <p class="lede">Plain-English explainers on entitlements, home help, transport, and local support &mdash; written from official Irish data, with no sign-up and nothing for sale.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="post-grid">
+        <a class="post-card" href="carers-allowance-support-grant-ireland-2026-guide.html">
+          <div class="thumb"><img src="carer-support-grant-ireland.jpg" alt="Close-up of an adult child's hand resting on an older parent's hand, representing family caring and the Carer's Support Grant in Ireland" loading="lazy" width="1600" height="1066"></div>
+          <div class="body">
+            <span class="cat-tag">Entitlements &amp; Money</span>
+            <h2>Carer's Allowance and the Carer's Support Grant in Ireland: A 2026 Guide</h2>
+            <p class="excerpt">The three main payments for family carers in Ireland, what changed in July 2026, and how to work out what you're owed.</p>
+            <p class="post-meta">3 September 2026 &middot; 9 min read</p>
+          </div>
+        </a>
+      </div>
+      <div class="more-soon">More guides are on the way &mdash; <a href="../index.html#list-service">get in touch</a> if there's a topic you'd like covered.</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>Cara Clare</h5>
+        <p>An independent, free directory connecting older people and family carers across Ireland to real local support. Piloted in County Clare. Not a service provider, not affiliated with the HSE, Age Friendly Ireland, or any council.</p>
+      </div>
+      <div>
+        <h5>Sources for Ireland</h5>
+        <ul>
+          <li>CSO Census of Population 2022</li>
+          <li>Department of Social Protection, gov.ie</li>
+          <li>Citizens Information</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@caraclareie.com">hello@caraclareie.com</a></li>
+          <li>Spotted outdated info? Email us &mdash; we check every listing.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 Cara Clare. A community information project.</span>
+      <span>Listings checked August 2026.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
