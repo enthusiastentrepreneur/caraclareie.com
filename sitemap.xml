@@ -6,4 +6,6 @@
   <url><loc>https://caraclareie.com/counties/cork.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://caraclareie.com/counties/galway.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://caraclareie.com/counties/limerick.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://caraclareie.com/blog/index.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://caraclareie.com/blog/carers-allowance-support-grant-ireland-2026-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
