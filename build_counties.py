@@ -95,9 +95,9 @@ STYLE = """
   }
   .headbar{
     display:flex; align-items:center; justify-content:space-between;
-    padding:14px 0; gap:12px; flex-wrap:nowrap;
+    padding-top:14px; padding-bottom:14px; gap:12px; flex-wrap:nowrap;
   }
-  @media (max-width:340px){ .headbar{ padding:12px 0; } }
+  @media (max-width:340px){ .headbar{ padding-top:12px; padding-bottom:12px; } }
   .brand{display:flex; align-items:center; gap:10px; text-decoration:none; min-width:0;}
   .brand-mark{width:34px;height:34px;flex:none;}
   .brand-name{
@@ -344,7 +344,7 @@ def header(active):
     <nav class="headnav">
       <a href="../index.html#need" class="hide-mobile">Find help</a>
       <a href="../index.html#counties" class="hide-mobile">Counties</a>
-      <a href="../blog/index.html" class="hide-mobile">Blog</a>
+      <a href="../about.html" class="hide-mobile">About</a>
       <a class="btn small" href="../index.html#list-service">List a service</a>
     </nav>
   </div>
@@ -358,6 +358,7 @@ def footer(county_short, sources_extra):
       <div>
         <h5>Cara Clare</h5>
         <p>An independent, free directory connecting older people and family carers across Ireland to real local support. Piloted in County Clare. Not a service provider, not affiliated with the HSE, Age Friendly Ireland, or any council.</p>
+        <p><a href="../about.html">About Cara Clare</a></p>
       </div>
       <div>
         <h5>Sources for {county_short}</h5>
