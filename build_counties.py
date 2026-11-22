@@ -369,7 +369,7 @@ def footer(county_short, sources_extra):
       <div>
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:hello@caraclareie.com">hello@caraclareie.com</a></li>
+          <li><a href="mailto:assistance.caraclare.ie@outlook.com">assistance.caraclare.ie@outlook.com</a></li>
           <li>Spotted outdated info? Email us &mdash; we check every listing.</li>
         </ul>
       </div>
@@ -522,7 +522,7 @@ def page(slug, short, long_name, stats, intro, dir_blocks_html, sources):
             <li>Spot an error, or want to be added? Just get in touch</li>
           </ul>
         </div>
-        <a class="provider-btn" href="mailto:hello@caraclareie.com?subject=List%20our%20{short}%20service%20on%20Cara%20Clare">Get in touch &rarr;</a>
+        <a class="provider-btn" href="mailto:assistance.caraclare.ie@outlook.com?subject=List%20our%20{short}%20service%20on%20Cara%20Clare">Get in touch &rarr;</a>
       </div>
     </div>
   </section>
